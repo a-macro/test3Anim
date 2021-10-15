@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.main {
+    overflow-x: hidden;
+}
+.gallery {
+    height: 30vh;
+    width: max-content;
+    margin-top: 50vh;
+    padding:  0 2vw 0 4vw;
+    display: flex;
+    cursor: grab;
+    transform: translateX(0);
+    transition: transform 0s ease-out 0s;
+}
+.gallery__item {
+    height: 100%;
+    width: 21vw;    
+    margin-right: 2vw;
+    background: #fff;
+}
+@media(max-width: 1024px) {
+    .gallery__item {
+        width: 44vmin;  
+    }
+}
+@media(max-width: 768px) {
+    .gallery__item {
+        width: 90vmin;  
+    }
+}
